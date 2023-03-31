@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Noto+Sans+Display&display=swap");
+/* adding multiple fonts links in google fonts will add font-weignt based on elements(convinince) even if you import a single link */
+/* styled conponents package give you coninience of writing selector inside a selector rather than making new for everything */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100vw;
+    text-align: center;
+    height: 100vh;
+    background-color: #131324;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.elementContainer {
+    background-color: #00000076;
+    padding: 3rem 4rem;
+    border-radius: 2rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm input {
+    background-color: transparent;
+    padding: 1rem;
+    border: 0.1rem solid #4e0eff;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.4rem;
+}
+
+.inputForm input:focus {
+    outline: none;
+}
+
+button {
+    background: #997af0;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    background-color: #4e0eff;
+}
+
+span a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #4e0eff;
+}
+
+.avatarContainer {
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background-color: #131324;
+    text-transform: uppercase;
+    color: white;
+}
+
+.avatarElementContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.avatarHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.avatar {
+    height: 9rem;
+    width: 9rem;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+
+.avatar img {
+    height: 9rem;
+}
+
+.selected {
+    border: 3px solid #4e0eff;
+}
+
+.chatContainer {
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background-color: #131324;
+    color: white;
+}
+
+.chatAppInterface {
+    background-color: #00000076;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    /* padding: 1rem 1rem; */
+    grid-template-columns: 30% 67%;
+    display: grid;
+    height: 85vh;
+    width: 85vw;
+}
+
+.contactHeader {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-rows: 8% 82% 10%;
+}
+
+.currentUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background: #252538;
+}
+
+.profile {
+    overflow: hidden;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2.5rem;
+}
+
+.username {
+    font-size: 1.5rem;
+}
+.allContacts{
+    padding: 0.3rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+    background: #14182a;
+    gap: 1rem;
+}
+.inputContainer{
+    display: grid;
+    grid-auto-rows: 10% 80% 10%;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.inputHeader{
+    display: grid;
+    grid-template-columns: 90% 8%;
+    align-items: center;
+    gap: .3rem;
+    background: #3e3e3e3b;
+
+}
+.sendMessageBtn{
+    background: #997af0;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0.3rem;
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transform: translateX(-64px);
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 1.2rem;
+    border: none;
+}
+.inputPanel{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 10% 88%;
+
+}
+
+.msgForm{
+    display: grid;
+    grid-template-columns: 98% 2%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+.msgForm input {
+    border-radius: 1.2rem;
+    background: #3e3636;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem;
+    padding-right: 4.3rem;
+}
+.selectedContact{
+    background-color:#4e0eff;
+}
+.logout{
+    background: #997af0;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.4rem;
+}
+.msgContainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, 10px);
+    gap:1rem;
+    height: 63vh;
+    overflow: auto;
+    position: relative;
+}
+.msg{
+    padding: .5rem;
+    background-color: #161669;
+    border-radius: 3rem; 
+    width: fit-content;
+    position: relative;
+    overflow-wrap: anywhere;
+}
+.right{
+    position: absolute;
+    right:0px
+}
+.left{
+    position: absolute;
+    left:0px
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }  
+::-webkit-scrollbar-track {
+    background: #050505; 
+  }
+::-webkit-scrollbar-thumb {
+    background: #898989; 
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #414141; 
+  }
